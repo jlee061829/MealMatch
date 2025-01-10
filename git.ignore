@@ -1,0 +1,16 @@
+# Dependencies
+/node_modules
+/client/node_modules
+/server/node_modules
+
+# Environment files
+.env
+/client/.env
+/server/.env
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
