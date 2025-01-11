@@ -8,7 +8,11 @@ require("dotenv").config();
 const app = express();
 
 // process requests
-app.use(cors()); // allows other websites to communicate with server
+app.use(cors({
+  origin: ['https://mealmatch-frontend-dnnwf4na0-justins-projects-67bebd4d.vercel.app'],
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
 app.use(express.json()); // handles json data
 
 app.get("/test", (req, res) => {
