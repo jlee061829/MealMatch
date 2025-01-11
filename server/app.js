@@ -9,7 +9,7 @@ const app = express();
 
 // process requests
 app.use(cors({
-  origin: ['https://mealmatch-frontend-dnnwf4na0-justins-projects-67bebd4d.vercel.app'],
+  origin: '*',
   methods: ['GET', 'POST'],
   credentials: true
 }));
